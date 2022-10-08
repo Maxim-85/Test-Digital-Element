@@ -1,0 +1,118 @@
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1366px;
+  }
+//   header {
+//     position: absolute;
+//   }
+  footer {
+    margin-bottom: 0 0;
+  }
+  .container {
+    width: 970px;
+    padding: 0 15px;
+  }
+  .menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 1200px;
+    height: 48px;
+      // margin: 0 auto
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    &__logo {
+      display: block;
+      width: 48px;
+      height: 48px;
+    }
+    &__hamburger {
+      display: block;
+      right: 4px;
+      width: 24px;
+      height: 16px;
+      &-btn {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        border: none;
+      }
+    }
+  }
+  .promo {
+    position: relative;
+    height: 598px;
+    padding-top: 170px;
+      // padding-top: 71px
+    padding-left: 197px;
+      // background: linear-gradient(0deg, #98C3E8 7.34%, rgba(152, 195, 232, 0) 29.62%)
+      // opacity: 0.2
+      // z-index: -1
+    &__bckg {
+      background: linear-gradient(0deg, #98C3E8 7.34%, rgba(152, 195, 232, 0) 29.62%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.5;
+      background-size: cover;
+      top: 0;
+      left: 0;
+    }
+    &__header {
+      position: relative;
+      z-index: 0;
+      width: 510px;
+      height: 148px;
+      font-family: Gilroy, sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 74px;
+      letter-spacing: 0.04em;
+      color: #1F3F68;
+    }
+    &__descr {
+      position: relative;
+      z-index: 0;
+      margin-top: 32px;
+      width: 425px;
+      height: 82px;
+      font-family: Gilroy, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+      color: #1F3F68;
+      opacity: 0.6;
+    }
+    &__btn {
+      position: relative;
+      z-index: 0;
+      margin-top: 71px;
+      width: 220px;
+      height: 56px;
+      background: #5A98D0;
+      box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+      border-radius: 10px;
+      border: none;
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+    }
+    &__img {
+      position: absolute;
+      z-index: 0;
+      top: 80px;
+      right: 24px;
+    }
+  }
