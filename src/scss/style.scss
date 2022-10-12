@@ -16,7 +16,7 @@ body {
   }
   .container {
     margin: 0 auto;
-    width: 970px;
+    max-width: 940px;
     padding: 0 15px;
   }
   .menu {
@@ -117,26 +117,43 @@ body {
   }
 
   .basic {
+    display: flex; 
+    flex-wrap: wrap;
     position: relative;
-    margin: 192px auto 212px;
+    height: 1150px;
+    margin: 192px auto 0;
+    justify-content: space-between;
+    .wrapper {
+      flex-direction: column;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      
+    } 
     &__header {
       width: 358px;
       height: 138px;
+      margin-bottom: 158px;
       font-family: 'Gilroy';
       font-weight: 600;
       font-size: 35px;
       line-height: 46px;
       letter-spacing: 0.05em;
       color: #316099;
-      display: inline-block;
     }
-    &__wrapper {
       .cards {
         width: 380px;
         height: 525px;
         background: #FFFFFF;
         box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
         border-radius: 10px;
+        &__logo {
+          position: relative;
+          // &-img {
+          //   margin-top: 48px;
+          //   margin-right: 124px;
+          // }
+        }
         &__content {
           margin: 56px 48px 48px;
           &-header {
@@ -157,12 +174,19 @@ body {
             opacity: 0.6;
             font-weight: 400;
           }
+          &-links {
+            display: flex;
+            justify-content: space-between;
+            width: 127px;
+            height: 30px;
+            margin-top: 32px;
+            font-family: 'Gilroy';
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            color: #5A98D0;
+          }
 
         }
-        // :first-child {
-
-        // }
       }
-
-    }
   }
