@@ -1,18 +1,21 @@
 @import "fonts";
 
 body {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    width: 1366px;
-    display:block;
+  max-width: 3440px;
+  min-width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  // width: 1366px;
+  display:block;
   }
 //   header {
 //     position: absolute;
 //   }
 footer {
-  margin-bottom: 0 0;
+  margin-bottom: 0;
 }
   
 .container {
@@ -21,37 +24,49 @@ footer {
   max-width: 940px;
   padding: 0 15px;
 }
-  
-.menu {
-  position: absolute;
+.header {
+  width: 100%;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  width: 1200px;
-  height: 48px;
-    // margin: 0 auto
-  margin-top: 50px;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  &__logo {
-    display: block;
-    width: 48px;
-    height: 48px;
-  }
-  &__hamburger {
-    display: block;
-    right: 4px;
-    width: 24px;
-    height: 16px;
-    &-btn {
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      border: none;
+  background-color: #fff;
+  z-index: 10;
+  
+  .menu {
+    // position: fixed;
+    // left: 50%;
+    // transform: translateX(-50%);
+    display: flex;
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 48px;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 24px 0;
+    // z-index: 1;
+    &__logo {
+      display: block;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+    }
+    &__hamburger {
+      display: block;
+      right: 4px;
+      width: 24px;
+      height: 16px;
+      &-btn {
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+      }
     }
   }
 }
+
 .promo {
   position: relative;
   height: 598px;
@@ -66,6 +81,12 @@ footer {
     background-size: cover;
     top: 0;
     left: 0;
+  }
+  &__content {
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+
   }
   &__header {
     position: relative;
@@ -110,19 +131,16 @@ footer {
     text-align: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    cursor: pointer;
   }
   &__img {
     position: absolute;
     z-index: 0;
-    top: 80px;
+    top: -90px;
     right: 24px;
   }
 }
-
-// .card1 {
-  
-// } Тут нужно подумать
-  
+ 
 .basic {
   display: flex; 
   flex-wrap: wrap;
@@ -162,61 +180,129 @@ footer {
     letter-spacing: 0.05em;
     color: #316099;
   }
-    .cards {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: 380px;
-      height: 525px;
-      background: #FFFFFF;
-      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-      border-radius: 10px;
-      &:first-child {
-        margin-left: 80px;
-        margin-top: 296px;
-      }
-      &__logo {
-        position: relative;
-        &-img {
-          position: relative;
-          display: block;
-          padding-top: 48px;
-          margin-right: 124px;
-        }
-      }
-      &__content {
-        margin: 56px 48px 48px;
-        &-header {
-          font-family: 'Gilroy';
-          font-size: 19px;
-          line-height: 30px;
-          letter-spacing: 0.05em;
-          color: #1F3F68;
-          font-weight: 600;
-        }
-        &-subheader {
-          margin-top: 16px;
-          font-family: 'Gilroy';
-          font-size: 16px;
-          line-height: 26px;
-          letter-spacing: 0.05em;
-          color: #1F3F68;
-          opacity: 0.6;
-          font-weight: 400;
-        }
-        &-links {
-          display: flex;
-          justify-content: space-between;
-          width: 127px;
-          height: 30px;
-          margin-top: 32px;
-          font-family: 'Gilroy';
-          font-size: 14px;
-          line-height: 30px;
-          letter-spacing: 0.05em;
-          color: #5A98D0;
-        }
-      }
-      
+  .card1 {
+    left: 80px;
+    top: 308px;
     }
+  
+  .cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 525px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    .logo2 {
+      margin: 0 auto;
+      margin-top: -22px;;
+    }
+    &__logo {
+      position: relative;
+      margin: 48px 124px auto auto;
+      &-img {
+        position: relative;
+        display: block;
+      }
+    }
+    &__content {
+      margin: auto 48px 48px;
+      &-header {
+        font-family: 'Gilroy';
+        font-size: 19px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        font-weight: 600;
+      }
+      &-subheader {
+        margin-top: 16px;
+        font-family: 'Gilroy';
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+        font-weight: 400;
+      }
+      &-links {
+        display: flex;
+        justify-content: space-between;
+        width: 127px;
+        height: 30px;
+        margin-top: 32px;
+        font-family: 'Gilroy';
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #5A98D0;
+        & a {
+          color: #5A98D0;
+          text-decoration: none;
+        }
+        & .vector {
+          width: 16px;
+          height: 16px;
+          margin-top: 4px;
+        }
+      }
+    }
+    
+  }
+}
+
+.our-client {
+  margin-top: 212px;
+  width: 100%;
+  height: 1549px;
+  background: #5A98D0;
+  border-radius: 200px 0px 0px 0px;
+  &__wrapper{
+    padding-top: 96px;
+    display: flex;
+    width: 91%;
+    height: 97px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__header {
+    width: 223px;
+    height: 92px;
+    font-family: 'Gilroy';
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+  }
+  &__descr {
+    width: 540px;
+    height: 80px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+  }
+  .list-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 111px;
+    width: 100%;
+    height: 256px;
+    &__wrapper {
+      width: 235px;
+      height: 128px;
+    }
+    &__client {
+      font-family: 'Gilroy';
+      font-size: 20px;
+      line-height: 46px;
+      letter-spacing: 0.02em;
+      color: #F2F2F2;
+    }
+  }
 }
