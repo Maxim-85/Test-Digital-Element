@@ -8,14 +8,29 @@ body {
   padding: 0;
   position: relative;
   height: 100%;
-  // width: 1366px;
   display:block;
   }
-//   header {
-//     position: absolute;
-//   }
+
+ul {
+  margin: 0;
+  padding: 0;
+}  
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+ } 
+
 footer {
   margin-bottom: 0;
+}
+
+.text-style {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.6;
 }
   
 .container {
@@ -104,13 +119,6 @@ footer {
     margin-top: 32px;
     width: 425px;
     height: 82px;
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
-    color: #1F3F68;
-    opacity: 0.6;
   }
   &__btn {
     position: relative;
@@ -216,13 +224,7 @@ footer {
       }
       &-subheader {
         margin-top: 16px;
-        font-family: 'Gilroy';
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: 0.05em;
         color: #1F3F68;
-        opacity: 0.6;
-        font-weight: 400;
       }
       &-links {
         display: flex;
@@ -281,12 +283,7 @@ footer {
   &__descr {
     width: 540px;
     height: 80px;
-    font-family: 'Gilroy';
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.05em;
     color: #FFFFFF;
-    opacity: 0.6;
   }
   .list-logo {
     display: flex;
@@ -299,7 +296,6 @@ footer {
     max-height: 256px;
     list-style: none;
     :nth-child(-n+4) {
-      height: 127px;
       border-bottom: 1px solid #9cc1e3;
     }
     :nth-child(odd) {
@@ -307,18 +303,16 @@ footer {
       border-right: 1px solid #9cc1e3;
     }
     :nth-child(2) {
-      width: 233px;
       border-right: 1px solid #9cc1e3;
     }
     :nth-child(6) {
-      width: 233px;
       border-right: 1px solid #9cc1e3;
     }
   
     &__client {
       display: flex;
-      width: 234px;
-      height: 128px;
+      width: 233px;
+      height: 127px;
       align-items: center;
       justify-content: center;
       font-family: 'Gilroy';
@@ -343,13 +337,16 @@ footer {
   border-radius: 0px 200px 0px 0px;
   &::after {
     content: "";
-    margin-top: 391px;
-    width: 1073px;
-    height: 0px;
+    position: absolute;
+    top: 45%;  
+    width: 85%;
     left: 0px;
-    top: 3393px;
     opacity: 0.4;
     border: 1px solid #FFFFFF;
+  }
+  .container {
+    margin-left: 50%;
+    transform: translateX(-43%);
   }
   &__wrapper {
     padding-top: 91px;
@@ -379,12 +376,7 @@ footer {
     &_descr {
       width: 460px;
       height: 80px; 
-      font-family: 'Gilroy';
-      font-size: 16px;
-      line-height: 26px;
-      letter-spacing: 0.05em;
       color: #FFFFFF;
-      opacity: 0.6;
     }
   }
   
@@ -404,7 +396,117 @@ footer {
     border: none;
   }
   
-   
+  &__links {
+    display: flex;
+    margin-top: 192px;
+
+    .afrianska {
+      margin-top: 1px;
+      width: 299px;
+      height: 228px;
+      &__title {
+        display: flex;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        &_name {
+          margin-left: 15px;
+          font-family: 'Gilroy';
+          font-size: 28px;
+          line-height: 46px;
+          letter-spacing: 0.02em;
+          color: #FFFFFF;
+        }
+      }
+
+      &_list {
+        margin-top: 33px;
+        height: 148px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-item {
+          display: flex;
+          color: #fff;
+          opacity: 1;
+          .link {
+            margin-left: 16px;
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .about {
+      margin-left: 100px;
+      width: 163px;
+      height: 214px;
+      
+      &__title {
+        font-family: 'Gilroy';
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+      }
+      &__list {
+        margin-top: 32px;
+        height: 152px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .text-style {
+          opacity: 1;
+        }
+        .link {
+          text-decoration: none;
+          opacity: 1;
+          color: #fff;
+        }
+      }
+    }
+
+    .follow {
+      margin-left: 77px;
+      width: 97px;
+      height: 214px;
+      &__title {
+        font-family: 'Gilroy';
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+      }
+
+      &__list {
+        margin-top: 32px;
+        height: 152px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .text-style {
+          opacity: 1;
+        }
+        .link {
+          text-decoration: none;
+          opacity: 1;
+          color: #fff;
+        }
+      }
+    } 
+  }
+  &__bottom {
+    width: 288px;
+    height: 26px;
+    margin-bottom: 64px;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+  } 
 }
 
 .footer-main {
