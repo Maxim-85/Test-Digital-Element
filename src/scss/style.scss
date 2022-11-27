@@ -524,24 +524,53 @@ footer {
   left: 0;
   top: 0;
   display: block;
-  // background: #FFFFFF;
-  opacity: 0.6;
+  background: rgba(49, 49, 49, 0.6);
+  z-index: 11; 
+  
+// input общие стили 
+  .input {
+    width: 428px;
+    height: 72px;
+    padding-left: 21px;
+  }
   &__inner {
     margin: 0 auto;
     margin-top: 15%;
     background-color: #FFFFFF;
-    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    box-shadow: 5px 10px 50px rgba(243, 244, 245, 0.2);
     border-radius: 10px;
     width: 540px;
     height: 800px;
-    z-index: 11;
     &_block {
-      margin: 56px;
+      padding: 56px;
       .form {
         display: flex;
         flex-direction: column;
+        .modal_header {
+          font-family: 'Gilroy';
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+        }
+        .name {
+          width: 428px;
+          height: 110px;
+          margin-top: 48px;
+          &_form {
+            font-family: 'Gilroy';
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.04em;
+            color: #1F3F68;
+            opacity: 0.8;
+          }
+          
+        }
       }
     }
   }
+
+  
 
 }
