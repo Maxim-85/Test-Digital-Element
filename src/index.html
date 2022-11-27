@@ -170,7 +170,7 @@
 					</div>
 					
 				</div>
-				<span class="footer__bottom">2019 © Afrianska. All rights reserved.</span>	
+				<label class="footer__bottom">2019 © Afrianska. All rights reserved.</label>	
 			</div>
 			
 		</footer>
@@ -178,20 +178,24 @@
 			<div class="modal__inner">
 				<div class="modal__inner_block">
 					<form class="form" action="">
+						<div class="modal_close">X</div>
 						<div class="modal_header">SEND US MESSAGE</div>
-						<div class="name"><span class="name_form">Full Name</span><input class="name_input input" type="text" placeholder="Your Name"></div>
+						<div class="name">
+							<label class="name_form">Full Name</label>
+							<input class="name_input input" name="name" type="text" placeholder="Your Name"></div>
 						<div class="email">
-							<span class="email_form">Email</span>
-							<input class="email_input input" type="email" placeholder="Your Email"></input>
+							<label class="email_form">Email</label>
+							<input class="email_input input" name="email" type="email" placeholder="Your Email"></input>
 						</div>
 						<div class="message">
-							<div class="span message_form">Message</div>
-							<input class="message_input input" type="text" placeholder="Your Message">
+							<label class="message_form">Message</label>
+							<input class="message_input input" name="message" type="text" placeholder="Your Message">
 						</div>
-						<input class="form-btn btn" type="submit"></input>
+						<button class="form-btn btn" type="submit">SUBMIT</button>
 					</form>
 				</div>
 			</div>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
