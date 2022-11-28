@@ -104,7 +104,8 @@ footer {
   }
   &__content {
     position: relative;
-    width: 1366px;
+    max-width: 1366px;
+    width: 100%;
     margin: 0 auto;
 
   }
@@ -268,7 +269,6 @@ footer {
 
 .our-client {
   position: absolute;
-  z-index: -1;
   width: 100%;
   height: 1549px;
   background: #5A98D0;
@@ -328,8 +328,9 @@ footer {
       font-size: 20px;
       line-height: 46px;
       letter-spacing: 0.02em;
-      cursor: pointer;
+      
       &:hover {
+        cursor: pointer;
         background: #518bbd;
         transition: all 0.3s ease;
       } 
@@ -534,6 +535,12 @@ footer {
     height: 72px;
     border: 1px solid #aec5de;
     border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Gilroy';
+    &:hover {
+      border: 2px solid #286ac0;
+    }
     &::placeholder {
       padding: 21px 36px;
       font-family: 'Gilroy';
@@ -611,5 +618,9 @@ footer {
       }
     }
   }
-
 }
+
+/* @media (max-width: ) {
+
+  
+} */

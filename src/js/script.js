@@ -21,10 +21,17 @@ window.addEventListener('DOMContentLoaded', () => {
         modal.addEventListener('click', (e) => {
             if (e.target == modal) {
                 modal.style.display = 'none';
+                console.log(e.target);
             }
-            console.log(e.target);
+            
         });
         
+        modal.addEventListener('keydown', (e) => {
+            if (e.code == 'Escape' && modal.style.display === 'block') {
+                console.log(e.code);
+                modal.style.display = 'none';
+            }
+        });
     };
     closeModal();
 });
